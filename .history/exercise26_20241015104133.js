@@ -1,0 +1,5 @@
+//synchronous
+
+function synchronous(){
+    alert("")
+}

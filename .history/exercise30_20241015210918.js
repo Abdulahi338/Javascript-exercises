@@ -1,0 +1,3 @@
+// callback function calculator
+
+function 
