@@ -11,28 +11,28 @@
 
 // fetchData()
 
-// async function fechdataHttp() {
-//     //get method
-//     try{
-//         console.log("Fetching data starts.......👁️👁️");
-//         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-//         if(!response.ok){
-//             console.log("erorr is detected")
+async function fechdataHttp() {
+    //get method
+    try{
+        console.log("Fetching data starts.......👁️👁️");
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        if(!response.ok){
+            console.log("erorr is detected")
            
 
-//         }
-//         const data = await response.json()
-//         console.log(data)
+        }
+        const data = await response.json()
+        console.log(data)
         
-//     }
-//     catch(error)
-//     {
-//         console.log(error);
+    }
+    catch(error)
+    {
+        console.log(error);
 
-//     }
+    }
     
-// }
-// fechdataHttp()
+}
+fechdataHttp()
 
 // cereate post
 
@@ -58,11 +58,9 @@ async function cereatePost(){
         console.log(response);
         const data = await response.json();
         console.log(data);
-    }catch{
-        
+    }catch(erorr){
+        console.log(erorr)
     }
-
 }
 
 cereatePost()
-console.log(",,,,,,,,,,,,,,,,,,,,,")

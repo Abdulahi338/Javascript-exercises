@@ -57,12 +57,10 @@ async function cereatePost(){
         }
         console.log(response);
         const data = await response.json();
-        console.log(data);
-    }catch{
-        
+        console.log(data)
+    }catch(erorr){
+        console.log(erorr)
     }
-
 }
 
 cereatePost()
-console.log(",,,,,,,,,,,,,,,,,,,,,")

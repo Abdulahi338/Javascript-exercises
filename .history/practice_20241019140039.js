@@ -56,13 +56,11 @@ async function cereatePost(){
             throw new Error(`http error: ${response.status}`)
         }
         console.log(response);
-        const data = await response.json();
-        console.log(data);
-    }catch{
-        
+        const data = await response.json()
+        console.log(data)
+    }catch(erorr){
+        console.log(eror)
     }
-
 }
 
 cereatePost()
-console.log(",,,,,,,,,,,,,,,,,,,,,")

@@ -11,36 +11,36 @@
 
 // fetchData()
 
-// async function fechdataHttp() {
-//     //get method
-//     try{
-//         console.log("Fetching data starts.......👁️👁️");
-//         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-//         if(!response.ok){
-//             console.log("erorr is detected")
+async function fechdataHttp() {
+    //get method
+    try{
+        console.log("Fetching data starts.......👁️👁️");
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        if(!response.ok){
+            console.log("erorr is detected")
            
 
-//         }
-//         const data = await response.json()
-//         console.log(data)
+        }
+        const data = await response.json()
+        console.log(data)
         
-//     }
-//     catch(error)
-//     {
-//         console.log(error);
+    }
+    catch(error)
+    {
+        console.log(error);
 
-//     }
+    }
     
-// }
+}
 // fechdataHttp()
 
 // cereate post
 
 async function cereatePost(){
     try{
-        // console.log("we will create thw post");
+        console.log("we will create thw post")
         const response = await fetch('https://jsonplaceholder.typicode.com/posts',{
-            method : 'POST',
+            method : "POST",
             headers:{
                 'content-Type': 'application/json',
             },
@@ -55,14 +55,12 @@ async function cereatePost(){
         if(!response.ok){
             throw new Error(`http error: ${response.status}`)
         }
-        console.log(response);
-        const data = await response.json();
-        console.log(data);
-    }catch{
-        
+        const data = await response.json()
+        console.log(data)
     }
-
+    catch(error){
+        console.log(error)
+    }
 }
 
 cereatePost()
-console.log(",,,,,,,,,,,,,,,,,,,,,")

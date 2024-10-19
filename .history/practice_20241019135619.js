@@ -38,7 +38,7 @@
 
 async function cereatePost(){
     try{
-        // console.log("we will create thw post");
+        console.log("we will create thw post");
         const response = await fetch('https://jsonplaceholder.typicode.com/posts',{
             method : 'POST',
             headers:{
@@ -55,14 +55,13 @@ async function cereatePost(){
         if(!response.ok){
             throw new Error(`http error: ${response.status}`)
         }
-        console.log(response);
-        const data = await response.json();
-        console.log(data);
-    }catch{
-        
+        console.log(re)
+        // const data = await response.json()
+        // console.log(data)
     }
-
+    catch(error){
+        console.log(error)
+    }
 }
 
 cereatePost()
-console.log(",,,,,,,,,,,,,,,,,,,,,")
