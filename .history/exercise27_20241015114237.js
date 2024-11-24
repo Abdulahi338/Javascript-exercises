@@ -1,5 +1,0 @@
-//promise
-
-function message(){
-    re
-}

@@ -1,3 +1,0 @@
-// asycn and await
-
-fun

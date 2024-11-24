@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 35</title>
+</head>
+<body>
+
+    <h2> exercise 35 ..</h2>
+
+    <img id="img" src="/img.jpg" alt="bitdon" width="200">
+    <img id="img" src="/img.jpg" alt="bitdon" width="200" scr="https://images.unsplash.com/photo-1652158291413-2057ca0c9baa?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8">
+    <button onclick="chanageDollar()">change into dollar</button>
+
+    <script>
+        function chanageDollar(){
+        const img = document.querySelector('#img')
+        const ur = prompt("Enter the scr : ");
+        // const width = prompt("enter the widith: ");
+        // const border = prompt("enter border: ");
+        // const boderRaduise = prompt("enetr the boder Raduise: ");
+        img.setAttribute('scr',ur);
+        console.log(img);
+        // image.style.border =border;
+        // image.style.boderRadiuse=boderRaduise;
+
+        }
+      
+
+
+    </script>
+    
+</body>
+</html>

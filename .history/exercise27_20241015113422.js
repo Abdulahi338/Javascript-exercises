@@ -1,7 +1,0 @@
-//promise
-
-function message(){
-    setTimeout(){
-        
-    }
-}

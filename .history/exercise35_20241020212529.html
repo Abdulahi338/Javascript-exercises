@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 35</title>
+</head>
+<body>
+
+    <h2> exercise 35 ..</h2>
+
+    <img id="img" src="/" alt="bitdon" width="200">
+       <button onclick="chanageDollar()">change into dollar</button>
+
+    <script>
+        function chanageDollar(){
+        const img = document.querySelector('#img');
+        const ur = prompt("Enter the scr : ");
+        // const width = prompt("enter the widith: ");
+        const border = prompt("enter border color: ");
+        // const borderRadius = prompt("enter border radius: ");
+
+        // const boderRaduise = prompt("enetr the boder Raduise: ");
+        img.setAttribute('src',ur,'width','1200px');
+        console.log(img);
+        img.style.border =`5px solid ${border}`;
+        // img.style.borderRadius =`${borderRadius}`;
+        // img.style.width = `${width}`
+      
+        // image.style.boderRadiuse=boderRaduise;
+
+        }
+      
+
+
+    </script>
+    
+</body>
+</html>

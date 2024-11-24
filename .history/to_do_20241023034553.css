@@ -1,0 +1,49 @@
+body{
+    background-color: #f4f4f4;
+}
+.container{
+    max-width: 500px;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+}
+h2{
+    text-align: center;
+}
+
+#to-doForm{
+    display: flex;
+}
+#text-todo{
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#to-doForm button{
+    font-size: 16px;
+    padding: 10px;
+}
+#display{
+    list-style: none;
+}
+.todo-item{
+    display: flex;
+    padding: 15px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+.todo-item.competed .task{
+    text-decoration: line-through;
+    color: gray;
+}
+.todo-item .task{
+    flex: 1;
+}
+.task button{
+    margin-left: px;
+}
+
+
+
