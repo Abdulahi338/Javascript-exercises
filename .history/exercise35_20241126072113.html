@@ -9,15 +9,15 @@
 
     <h2> exercise 35 ..</h2>
 
-    <img id="img" src="img.jpg" alt="Image" width="200">
-       <button onclick="chanageDollar()">change </button>
+    <img id="img" src="img.jpg" alt="" width="200">
+       <button onclick="chanageDollar()">change into dollar</button>
 
     <script>
         function chanageDollar(){
         const img = document.querySelector('#img');
         const ur = prompt("Enter the URL");
         const border= prompt("Enter the border color");
-        const borderRadius = prompt("Enter the border radius");
+        const borderR = prompt("Enter the border radius");
         const width = prompt("Enter the width");
 
 
@@ -25,7 +25,7 @@
        
 
         img.setAttribute('src',ur);
-        img.style.borderRadius =`${borderRadius}px`;
+        img.style.borderRadius =`${borderR}px`;
         img.style.width =`${width}`;
         img.style.border =`5px solid ${border}`;
         console.log(img);

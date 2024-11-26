@@ -20,7 +20,7 @@ function addColor(color){
     const newColor = document.createElement('li');
     newColor.textContent =color;
     newColor.style.color =color;
-    color_history.appendChild(newColor);
+    body.appendChild(newColor);
 
 }
 

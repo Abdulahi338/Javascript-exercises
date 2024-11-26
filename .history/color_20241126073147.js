@@ -5,7 +5,7 @@ const choose_color = document.querySelector('#choose');
 const display_color =document.querySelector('#displaColor');
 const color_history =document.querySelector('#color-history');
 const ClearBtn =document.querySelector('.Clear');
-// const body = document.getElementById('id')
+const
 
 choose_color.addEventListener('input',function(){
     const color =choose_color.value;
@@ -20,7 +20,7 @@ function addColor(color){
     const newColor = document.createElement('li');
     newColor.textContent =color;
     newColor.style.color =color;
-    color_history.appendChild(newColor);
+    body.appendChild(newColor);
 
 }
 
