@@ -36,7 +36,7 @@ form {
     gap: 10px; /* Adds space between elements */
 }
 
-input, textarea, .add {
+input, textarea, add {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;

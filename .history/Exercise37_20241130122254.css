@@ -1,9 +1,9 @@
 /* General reset */
-body, h1, form, input, textarea, button {
+/* body, h1, form, input, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Body styles */
 body {
@@ -36,7 +36,7 @@ form {
     gap: 10px; /* Adds space between elements */
 }
 
-input, textarea, .add {
+input, textarea, button {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -62,25 +62,3 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-
-.btn-delete,
-.btn-update {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.btn-delete {
-    background-color: red;
-}
-
-.btn-update {
-    background-color: green;
-}
-

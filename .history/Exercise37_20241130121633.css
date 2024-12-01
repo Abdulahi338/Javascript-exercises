@@ -18,7 +18,7 @@ body {
 
 /* Center the containers */
 .container {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
     max-width: 500px;
     background-color: white;
     border: 1px solid #ddd;
@@ -36,7 +36,7 @@ form {
     gap: 10px; /* Adds space between elements */
 }
 
-input, textarea, .add {
+input, textarea, button {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -62,25 +62,3 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-
-.btn-delete,
-.btn-update {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.btn-delete {
-    background-color: red;
-}
-
-.btn-update {
-    background-color: green;
-}
-

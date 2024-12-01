@@ -1,9 +1,28 @@
 /* General reset */
-body, h1, form, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 37</title>
+    <link rel="stylesheet" href="Exercise37.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Blog</h1>
+        <form id="blog" action="">
+            <input type="text" placeholder="Post Title" class="title"><br>
+            <input type="text" class="img" placeholder="Image URL"><br>
+            <textarea class="textarea" name="Description" id="" placeholder="Description"></textarea><br>
+            <button type="submit" class="add">Add Post</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>All Posts</h1>
+    </div>
+</body>
+</html>
+ */
 
 /* Body styles */
 body {
@@ -36,7 +55,7 @@ form {
     gap: 10px; /* Adds space between elements */
 }
 
-input, textarea, .add {
+input, textarea, button {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -62,25 +81,3 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-
-.btn-delete,
-.btn-update {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.btn-delete {
-    background-color: red;
-}
-
-.btn-update {
-    background-color: green;
-}
-
