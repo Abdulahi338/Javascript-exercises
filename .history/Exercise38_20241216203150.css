@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav-links ul{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5em;
+}
+.nav-links a{
+    text-decoration: none;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a:hove;

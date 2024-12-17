@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.togle-btn {
+    display: none;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-top: 80px; /* To offset fixed navbar height */
+}
+
+#home {
+    background-color: #f4a261;
+}
+#about {
+    background-color: #2a9d8f;
+}
+#contact {
+    background-color: #e76f51;
+}
+#blog {
+    background-color: #264653;
+}
+.togle-btn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 21px;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.togle-btn .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+    
+
+}
+.nav-links a#home{
+    background-color: aqua;
+    height: 100vh;
+
+}
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .nav-links{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .togle-btn{
+        display: flex;
+    }
+    .nav-links ul {
+        flex-direction: column; 
+        width: 100%; 
+        font-size: 20px; 
+        gap: 5px;     
+    }
+    .nav-links li{
+        text-align: center; 
+    }
+    .nav.add .nav-links{
+            max-height: 300px;
+            height: 100%;
+            opacity: 1;
+    }
+    .nav.add .bar:nth-child(2){
+        opacity: 0;
+    }
+    .nav.nav.add .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav.nav.add .bar:nth-child(3){
+        transform:translateY(-8px)  rotate(-45deg);
+    }
+    
+   
+    }
+   
+
+

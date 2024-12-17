@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul{
+    display: flex;
+    pa
+}

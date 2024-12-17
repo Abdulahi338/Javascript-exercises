@@ -1,0 +1,1 @@
+const toglebtn = document.querySelectorAll
