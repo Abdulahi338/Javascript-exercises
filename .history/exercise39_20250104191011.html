@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <!-- <link rel="stylesheet" href="Exercise39.css"> -->
+     <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .translator-container {
+            width: 90%;
+            max-width: 600px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        textarea, select, button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0078d7;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        textarea[readonly] {
+            background-color: #f3f4f6;
+            border: 1px solid #e0e0e0;
+        }
+    </style> 
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .text, .res {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Language Translator</h1>
+        <form id="forms">
+            <p>From</p>
+            <select id="from"></select>
+            <p>To</p>
+            <select id="to"></select>
+            <div class="text">
+                <p>Text to Translate</p>
+                <input type="text" id="text" placeholder="Enter text to translate">
+                <button type="submit">Translate</button>
+            </div>
+        </form>
+        <div class="res">
+            <h4>Translated Text</h4>
+            <p id="respon">Your translation will appear here...</p>
+        </div>
+    </div> -->
+    
+    <!-- <div class="container">
+        <h1>Language Translator</h1>
+        <form action="" method="post" id="forms">
+            <p>From</p>
+            <select name="" id="from">
+            </select>
+            <p>To</p>
+            <select name="" id="to">
+            </select>
+            <div class="text">
+                <p>Text to Translate</p>
+                <input type="text" id="text">
+                <button type="submit" id="sub">Translate</button>
+            </div>
+        </form>
+        <div class="res">
+            <h4>Translated Text</h4>
+            <p id="respon"></p>
+        </div>
+    </div> -->
+
+    <div class="translator-container">
+
+        <h1>Language Translator</h1>
+        <label for="inputText">Enter Text:</label>
+        <textarea id="inputText" placeholder="Type something here..."></textarea>
+        
+        <label for="sourceLang">Translate From:</label>
+        <select id="sourceLang">
+            <option value="">Loading...</option>
+        </select>
+
+        <label for="targetLang">Translate To:</label>
+        <select id="targetLang">
+            <option value="">Loading...</option>
+        </select>
+        
+        <button id="translateButton">Translate</button>
+
+        <label for="outputText">Translated Text:</label>
+        <textarea id="outputText" readonly placeholder="Translation will appear here..."></textarea>
+    </div> 
+    <script src="main39.js"></script>
+</body>
+</html>

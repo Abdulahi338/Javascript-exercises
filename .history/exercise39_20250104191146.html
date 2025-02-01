@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="Exercise39.css">
+   
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .text, .res {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    </style> -</head>
+<body>
+
+
+    <div class="translator-container">
+
+        <h1>Language Translator</h1>
+        <label for="inputText">Enter Text:</label>
+        <textarea id="inputText" placeholder="Type something here..."></textarea>
+        
+        <label for="sourceLang">Translate From:</label>
+        <select id="sourceLang">
+            <option value="">Loading...</option>
+        </select>
+
+        <label for="targetLang">Translate To:</label>
+        <select id="targetLang">
+            <option value="">Loading...</option>
+        </select>
+        
+        <button id="translateButton">Translate</button>
+
+        <label for="outputText">Translated Text:</label>
+        <textarea id="outputText" readonly placeholder="Translation will appear here..."></textarea>
+    </div> 
+    <script src="main39.js"></script>
+</body>
+</html>

@@ -47,13 +47,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    tex
     border: 1px solid #ddd;
     margin-top: 80px; /* To offset fixed navbar height */
 }
 
 #home {
     background-color: #f4a261;
-
 }
 #about {
     background-color: #2a9d8f;
