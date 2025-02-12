@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedio player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="exersice40.css">
+</head>
+<body>
+    <div class="container">
+        <div class="vedio-title">
+            <video id="video" width="200" >
+                <source src="" type="video/mp4">
+                
+            </video>
+            
+            <h2 id="title">Title</h2>
+            <p id="artist">Atist Name</p>
+        </div>
+
+        <!-- progress -->
+         <div class="progres-container">
+            <div class="progress-bar">
+                <div class="progress">
+
+                </div>
+            </div>
+            <div class="time">
+                <span id="current-time">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+
+         </div>
+
+        <!-- controlls button -->
+         <div class="controlls-btn">
+            <button class="btn" id="prev"><i class="fas fa-backward"></i></button>
+            <button class="btn play"  id="play" ><i  class="fas fa-play fas fa-pause"></i></button>
+            <button class="btn" id="next"><i class="fas fa-forward"></i></button>
+         </div>
+
+         <!-- volume -->
+          <div class="sound-controll">
+            <!-- volemu controlls -->
+            <div class="volume">
+                <input type="range" name="volume" id="volume" min="0" max="1" step="0.1">
+              </div>
+               <!-- speed controll -->
+           <div class="speed-controll">
+            <select name="speed" id="speed">
+                <option value="0.5">0.5X</option>
+                    <option value="0.75">0.75X</option>
+                    <option value="1" selected>1X</option>
+                    <option value="1.25">1.25X</option>
+                    <option value="2">2X</option>
+            </select>
+           </div>
+          </div>
+     
+
+       
+
+    </div>
+    <script src="exercise40.js"></script>
+    
+</body>
+</html>

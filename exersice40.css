@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.container{
+    text-align: center;
+    max-width: 350px;
+    margin: 20%;
+    background-color: rgb(253, 248, 248);
+    box-shadow: 0 5px 30px rgb(36, 33, 33);
+    padding: 20px;
+    border-radius: 5px;
+    height: 60vh;
+
+}
+video{
+    border-radius: 3px;
+    border: 5px solid grey;
+}
+.vedio-title{
+    padding: 10px;
+    height: 100px;
+
+}
+.vedio-title h2{
+    font-size: 1.5rem;margin-top: 20px;
+}
+.progres-container{
+    margin-top: 90px ;
+
+}
+.progress-bar{
+    background-color: grey;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.progress{
+    background-color: rgb(13, 214, 19);
+    width: 0%;
+    height: 100%;
+}
+.controlls-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+button{
+    width: 20px;
+    border: none;
+    font-size: 1rem;
+    background: none;
+    color: rgb(89, 86, 86);
+    cursor: pointer;
+}
+.sound-controll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: grey;
+    margin-top: 3px;
+}
